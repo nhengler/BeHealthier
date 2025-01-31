@@ -1,0 +1,53 @@
+#corpo{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #886b2ee3;
+}
+
+#container{
+    position: relative;
+    display: flex;
+    height: 99vh;
+    width: 99vw;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid red;
+}
+
+#titulo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0; /*topo*/
+}
+
+#calculadora{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 15%; /*medida que posiciona em relação ao pai*/
+}
+
+#lateral{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    left:0;
+}
+
+    #lateral p{
+        font-family: Helvetica, sans-serif;
+        font-size: 15px;
+        color: white;
+        line-height: 1.5;
+    }
+
+    #lateral h2{
+        font-family: Helvetica, sans-serif;
+        font-size: 35px;
+        
+    }
