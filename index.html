@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cálculo de calorias</title>
     <link rel="stylesheet" href="style.css">
+    <script src="logica.js" defer></script> <!--o atributo defer faz com que o JavaScript só seja executado depois que todo o HTML for carregado-->
 </head>
 <body id="corpo">
     <div id="container">
-        <header id="titulo"><h1>Calculadora</h1></header>
-        <br>
+        <header id="titulo"><h2>Calculadora</h2></header>
+        <hr>
         <div id="calculadora">
             <input type="number" id="peso" placeholder="kg" required> <!-- required impede o envio do formulário caso o campo esteja vazio -->
         <br><br>
@@ -17,13 +18,15 @@
         <br><br>
             <input type="number" id="idade" placeholder="anos" required>
         <br><br>
-            <button>Calcular</button>
+            <button id="exibirResultado">Calcular</button>
         <br><br>
-            <div id="resultado"></div>
         </div> 
-        
+        <br><br>
+        <div id="resultado"></div>
+
         <aside id="lateral">
             <h2><strong>Qual a importância?</strong></h2>
+            <hr>
             <p>
                 Podemos facilmente exceder a quantidade de <br>
                 calorias consideradas ideais para o nosso <br>
@@ -34,7 +37,8 @@
                 nós, pois assim, evitamos o sobrepeso e todos <br>
                 os problemas que ele pode nos acarretar. <br>
                 
-            </p>
+            </p>    
+            <iframe id = "videoYt" width="370" height="290" src="https://www.youtube.com/embed/T5gKJX8gTQk?si=y3woEbedMqMMJxqn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </aside>
     
     </div>
