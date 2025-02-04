@@ -9,11 +9,10 @@
 #container{
     position: relative;
     display: flex;
-    height: 99vh;
-    width: 99vw;
+    height: 98vh;
+    width: 98vw;
     justify-content: center;
-    align-items: center;
-    border: 1px solid red;
+    align-items: center;    
 }
 
 #titulo{
@@ -21,14 +20,16 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 0; /*topo*/
+    top: 9%; /*topo*/
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
 }
 
 #calculadora{
     position: absolute;
     justify-content: center;
     align-items: center;
-    top: 15%; /*medida que posiciona em relação ao pai*/
+    top: 25%; /*medida que posiciona em relação ao pai*/ 
 }
 
 #lateral{
@@ -37,11 +38,12 @@
     align-items: center;
     top: 10%;
     left:0;
+    height: 80vh;
 }
 
     #lateral p{
         font-family: Helvetica, sans-serif;
-        font-size: 15px;
+        font-size: 18px;
         color: white;
         line-height: 1.5;
     }
@@ -51,3 +53,19 @@
         font-size: 35px;
         
     }
+
+    #videoYt{
+        border: 1px solid white;
+    }
+
+#resultado{
+    border: 1px solid red;
+    position: absolute;
+    width: 30%;
+    height:10%;
+    top: 50%;
+    justify-content: center;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+}
