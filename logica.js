@@ -10,8 +10,13 @@ function fazerCalculo(){
     }
 
     let valorResultado = 88 + (13.397 * valorPeso) + (4.799 * valorAltura) - (5.677 * valorIdade);
-    document.getElementById('resultado').textContent = "Resultado: " + valorResultado.toFixed(2);
+    document.getElementById('resultado').innerHTML = "Resultado: " + valorResultado.toFixed(2) + "<br><br>";
+    document.getElementById('resultado').innerHTML += "Com base nos seus resultados, fizemos um cardápio especial para você. Clique no botão abaixo para visualizar.";
+    //adição de botão qu mostra o cardáipo
+}    
+
     
-}
+    
+
 
 document.getElementById('exibirResultado').addEventListener('click', fazerCalculo);
