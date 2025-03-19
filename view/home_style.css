@@ -1,0 +1,88 @@
+@import url(https://fonts.google.com/specimen/Playfair+Display);
+
+#home_background{
+    display: flex;
+    flex-direction: column;   /* organiza os elementos verticalmente */
+    width: 100%;
+    height: 100%;
+    background-color: white;
+
+}
+
+/*barra de navegação*/
+
+#nav-bar{
+    display: flex;
+    position: absolute;
+    background-color: #423f3f;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    
+}
+
+#nav-list{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    width: 90%;
+    height: 80%;
+    padding-right: 75%;
+    
+}
+
+#nav-list li{
+    list-style-type: none;
+    display: flex;
+    position: relative;
+    margin-left: 40%;
+    padding-top: 10%;
+    flex-direction: column; 
+    align-items: center;  /* centraliza o conteúdo horizontalmente */
+    justify-content: center; /* centraliza o conteúdo verticalmente */
+}
+
+#nav-list a{
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: bold;
+}
+
+#doctor-logo{
+    display: flex;
+    position: relative; 
+    width: 10%;
+    height: 90%;
+    
+}
+
+#house-icon{
+    display: flex;
+    position: relative;
+    padding-right: 0%;
+    height: 35px;
+    margin-bottom: 3px;
+}
+
+#calculator-icon{
+    display: flex;
+    position: relative;
+    padding-right: 0%;
+    height: 35px;
+    width: 50px;
+    margin-bottom: 3px;
+}
+
+
+/*seção do banner*/
+
+#banner{
+    margin-top: 5%;
+    border: 1px blue solid;
+}
+
