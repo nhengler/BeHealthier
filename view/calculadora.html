@@ -8,6 +8,26 @@
     <script src="../controller/logica_calculo.js" defer></script> <!--o atributo defer faz com que o JavaScript só seja executado depois que todo o HTML for carregado-->
 </head>
 <body id="corpo">
+    
+   <!-- barra de navegação -->
+   <nav id="nav-bar">
+    <img src="../assets/doctor-logo.svg" alt="Logo da BeHealthier" id="doctor-logo">
+    <h1 id="titulo_site">BeHealthier</h1>
+    <ul id="nav-list">
+        <li>
+            <a href="/view/home.html">
+            <img src="../assets/house-icon.svg" alt="Ícone de casa" id="house-icon">
+            </a>
+        </li>
+        <li>
+            <a href="/view/calculadora.html">
+            <img src="../assets/calculator-icon.svg" alt="Ícone de casa" id="calculator-icon">
+            </a>
+        </li>
+    </ul>
+</nav>
+    
+    <!-- formulário de cálculo -->
     <div id="container">
         <header id="titulo"><h2>Calculadora</h2></header>
         <hr>
@@ -25,6 +45,7 @@
         <div id="resultado">
         </div>
         
+        <!-- barra lateral -->
         <aside id="lateral">
             <h2><strong>Qual a importância?</strong></h2>
             <hr>

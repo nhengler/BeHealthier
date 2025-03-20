@@ -14,10 +14,10 @@
 #nav-bar{
     display: flex;
     position: absolute;
-    background-color: #423f3f;
     width: 100vw;
     height: 10vh;
     align-items: center;
+    background-color: #b9d7f3;
     
 }
 
@@ -43,6 +43,10 @@
     flex-direction: column; 
     align-items: center;  /* centraliza o conteúdo horizontalmente */
     justify-content: center; /* centraliza o conteúdo verticalmente */
+    background-color: #b9d7f3;
+    transition: background-color 0.5s ease-in-out; /* animação suave de 0.5s */
+    border-radius: 15px; /* altera o formato da div*/
+
 }
 
 #nav-list a{
@@ -51,6 +55,10 @@
     font-size: 11px;
     font-family: 'Playfair Display', sans-serif;
     font-weight: bold;
+}
+
+#nav-list li:hover{
+    background-color: #d0e8ff;
 }
 
 #doctor-logo{
@@ -66,6 +74,7 @@
     position: relative;
     padding-right: 0%;
     height: 35px;
+    width: 50px;
     margin-bottom: 3px;
 }
 
@@ -73,7 +82,7 @@
     display: flex;
     position: relative;
     padding-right: 0%;
-    height: 35px;
+    height: 38px;
     width: 50px;
     margin-bottom: 3px;
 }
