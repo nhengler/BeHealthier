@@ -1,4 +1,4 @@
-@import url(https://fonts.google.com/specimen/Playfair+Display);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap');
 
 #home_background{
     display: flex;
@@ -17,7 +17,6 @@
     width: 100vw;
     height: 10vh;
     align-items: center;
-    background-color: #b9d7f3;
     
 }
 
@@ -43,7 +42,6 @@
     flex-direction: column; 
     align-items: center;  /* centraliza o conteúdo horizontalmente */
     justify-content: center; /* centraliza o conteúdo verticalmente */
-    background-color: #b9d7f3;
     transition: background-color 0.5s ease-in-out; /* animação suave de 0.5s */
     border-radius: 15px; /* altera o formato da div*/
 
@@ -53,12 +51,11 @@
     text-decoration: none;
     color: white;
     font-size: 11px;
-    font-family: 'Playfair Display', sans-serif;
     font-weight: bold;
 }
 
 #nav-list li:hover{
-    background-color: #d0e8ff;
+    background-color: #abacad;
 }
 
 #doctor-logo{
@@ -91,7 +88,35 @@
 /*seção do banner*/
 
 #banner{
-    margin-top: 5%;
-    border: 1px blue solid;
+    display: flex;
+    margin-top: 7%;
+}
+
+#banner-container-calculadora{
+    display: flex;
+    position: relative;
+    height: 300px;
+    width: auto;
+    background-size: cover; /* faz a imagem cobrir toda a área sem deformar */
+    background-position: center; /* centraliza a imagem */
+    border-radius: 15px;
+}
+
+#banner-img-balanca{
+    border-radius: 50%;
+}
+
+#banner-text-balanca{
+    padding-left: 30px;
+}
+
+#banner-text-balanca a{
+    color: black;
+    font-size: 48px;
+    font-family: "Georgia", "Times New Roman", serif; 
+}
+
+#prev-btn, #next-btn{
+    margin: 20px;
 }
 
