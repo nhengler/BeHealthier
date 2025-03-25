@@ -89,21 +89,23 @@
 
 #banner{
     display: flex;
-    margin-top: 7%;
+    margin-top: 10%;
 }
 
 #banner-container-calculadora{
     display: flex;
     position: relative;
     height: 300px;
-    width: auto;
-    background-size: cover; /* faz a imagem cobrir toda a área sem deformar */
+    width: 650px;
+    justify-content: center;
     background-position: center; /* centraliza a imagem */
     border-radius: 15px;
+    margin-left: 10px;
 }
 
 #banner-img-balanca{
     border-radius: 50%;
+    margin-left: 15px;
 }
 
 #banner-text-balanca{
@@ -111,12 +113,39 @@
 }
 
 #banner-text-balanca a{
+    font-family: Helvetica, sans-serif;
     color: black;
     font-size: 48px;
-    font-family: "Georgia", "Times New Roman", serif; 
+     
 }
 
-#prev-btn, #next-btn{
-    margin: 20px;
+#prev-btn{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 120px;
+    margin-left: 0px;
 }
 
+#next-btn{
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 120px;
+    margin-right: 0px;
+}
+
+#arrow-left, #arrow-right{
+    height: 40px;
+    width: 40px;
+}
+
+
+/*seção de contato*/
+#contato{
+    margin-top: 200px;
+}
