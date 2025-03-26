@@ -6,7 +6,6 @@
     width: 100vw;
     height: 10vh;
     align-items: center;
-    background-color: #b9d7f3;
     
 }
 
@@ -32,7 +31,6 @@
     flex-direction: column; 
     align-items: center;  /* centraliza o conteúdo horizontalmente */
     justify-content: center; /* centraliza o conteúdo verticalmente */
-    background-color: #b9d7f3;
     transition: background-color 0.5s ease-in-out; /* animação suave de 0.5s */
     border-radius: 15px; /* altera o formato da div*/
 
@@ -42,12 +40,11 @@
     text-decoration: none;
     color: white;
     font-size: 11px;
-    font-family: 'Playfair Display', sans-serif;
     font-weight: bold;
 }
 
 #nav-list li:hover{
-    background-color: #d0e8ff;
+    background-color: #d6daddde;
 }
 
 #doctor-logo{
@@ -82,7 +79,7 @@
     justify-content: center;
     height: 100vh;
     width: 100%;
-    background-color: white;
+    background-color: #f7fafcde;
 }
 
 #container{

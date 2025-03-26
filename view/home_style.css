@@ -5,7 +5,7 @@
     flex-direction: column;   /* organiza os elementos verticalmente */
     width: 100%;
     height: 100%;
-    background-color: white;
+    background-color: #f7fafcde;
 
 }
 
@@ -55,7 +55,7 @@
 }
 
 #nav-list li:hover{
-    background-color: #abacad;
+    background-color: #d6daddde;
 }
 
 #doctor-logo{
@@ -90,9 +90,25 @@
 #banner{
     display: flex;
     margin-top: 10%;
+    overflow: hidden;
+
+    border: 1px solid black;
 }
 
-#banner-container-calculadora{
+#banner-container-funcionalidades{
+    display: flex;
+    position: relative;
+    height: 300px;
+    width: 650px;
+    justify-content: center;
+    background-position: center; /* centraliza a imagem */
+    border-radius: 15px;
+    margin-left: 10px;
+
+    border: 1px solid red;
+}
+
+#conteudo-da-calculadora{
     display: flex;
     position: relative;
     height: 300px;
@@ -106,10 +122,14 @@
 #banner-img-balanca{
     border-radius: 50%;
     margin-left: 15px;
+
+    border: 1px solid blue;
 }
 
 #banner-text-balanca{
     padding-left: 30px;
+
+    border: 1px solid blue;
 }
 
 #banner-text-balanca a{
@@ -117,6 +137,34 @@
     color: black;
     font-size: 48px;
      
+}
+
+#banner-img-tabela-macros{
+    border-radius: 50%;
+    margin-left: 15px;
+
+    border: 1px solid blue;
+}
+
+#banner-text-tabela-macros{
+    padding-left: 30px;
+}
+
+#banner-text-tabela-macros a{
+    font-family: Helvetica, sans-serif;
+    color: black;
+    font-size: 48px;
+     
+}
+
+.conteudo-atual{
+    transition: opacity 0.5s ease-in-out;
+}
+
+.conteudo-oculto{
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
 }
 
 #prev-btn{
