@@ -148,12 +148,18 @@
     background-position: center; 
     border-radius: 15px;
     margin-left: 10px;
+
+    border: 1px solid blue
 }
 
 #banner-img-macros{
+    width: 320px;
+    height: 320px;
+    
     border-radius: 50%;
     margin-left: 15px;
-
+    
+    object-fit: cover;
     border: 1px solid blue;
 }
 
@@ -169,6 +175,8 @@
 }
 
 .conteudo-atual{
+    opacity: 1;
+    visibility: visible;
     transition: opacity 0.5s ease-in-out; /*animação de transição de conteúdos*/
 }
 
@@ -188,15 +196,25 @@
     height: 40px;
     width: 40px;
     border-radius: 50%;
-    cursor: pointer;
+    
 }
 
 #prev-btn {
-    left: 10px; 
+    width: 50px; 
+    height: 50px;
+    left: 5px; 
+    
+
+    border: 1px solid green;
 }
 
 #next-btn {
+    width: 50px; 
+    height: 50px;
     right: 5px; 
+    
+
+    border: 1px solid green;
 }
 
 
