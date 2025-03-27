@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 #home_background{
     display: flex;
@@ -6,6 +6,7 @@
     width: 100%;
     height: 100%;
     background-color: #f7fafcde;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /*barra de navegação*/
