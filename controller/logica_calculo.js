@@ -19,9 +19,9 @@ function fazerCalculo(){
     resultado.appendChild(botaoSugestao); // método que adiciona "botaoSugestao" na div "resultado" 
     botaoSugestao.addEventListener('click', function(){
         if(valorResultado <= 2000){
-            window.open("cardapio1.html"); // abre cardapio1.html em outra guia
+            window.open("/view/cardapio-1/cardapio1.html"); // abre cardapio1.html em outra guia
         }   else if (valorResultado > 2000 && valorResultado <= 2500){
-            window.open("cardapio2.html"); // abre cardapio2.html em outra guia
+            window.open("/view/cardapio-2/cardapio2.html"); // abre cardapio2.html em outra guia
         }
         });
     }    
