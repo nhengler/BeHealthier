@@ -11,32 +11,33 @@
         <button id="switch-button">
             <img src="/assets/switch.svg" alt="Botão de alternar" id="switch-icon">
         </button>
+            
+        <!-- Tela de Login -->
+        <div id="card-login" class="conteudo-atual-flip">
+            <h2>Login</h2>
+                <div class="form-content">
+                    <form>
+                        <input type="email" id="login-email" placeholder="Email" required>
+                        <input type="password" id="login-password" placeholder="Senha" required>
+                        <button type="submit">Entrar</button>
+                    </form>
+                </div>
+        </div>
 
-        <div id="card">
-            <!-- Tela de Login -->
-            <div id="login-form" class="form-panel">
-                <h2>Login</h2>
-                    <div id="login-form-content">
-                        <form>
-                            <input type="email" id="login-email" placeholder="Email" required>
-                            <input type="password" id="login-password" placeholder="Senha" required>
-                            <button type="submit">Entrar</button>
-                        </form>
-                    </div>
-            </div>
-
-            <!-- Tela de Cadastro -->
-            <div id="register-form" class="form-panel">
-                <h2>Cadastro</h2>
-                <form>
-                    <input type="email" id="register-email" placeholder="Email" required>
-                    <input type="password" id="register-password" placeholder="Criar senha" required>
-                    <input type="password" id="confirm-password" placeholder="Confirmar senha" required>
-                    <input type="date" id="birthdate" required>
-                    <input type="text" id="cpf" placeholder="CPF" required>
-                    <button type="submit">Cadastrar</button>
-                </form>
-            </div>
+        
+        <!-- Tela de Cadastro -->
+        <div id="card-register" class="conteudo-oculto-flip">
+            <h2>Cadastro</h2>
+                <div class="form-content">
+                    <form>
+                        <input type="email" id="register-email" placeholder="Email" required>
+                        <input type="password" id="register-password" placeholder="Criar senha" required>
+                        <input type="password" id="confirm-password" placeholder="Confirmar senha" required>
+                        <input type="date" id="birthdate" required>
+                        <input type="text" id="cpf" placeholder="CPF" required>
+                        <button type="submit">Cadastrar</button>
+                    </form>
+                </div>
         </div>
     </div>
 </body>
