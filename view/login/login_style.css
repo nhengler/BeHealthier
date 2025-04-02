@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+/* Centraliza o container na tela */
+#container {
+    
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*div do botão de troca*/
+#switch-button {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+    background-color: white;
+    margin-bottom: 10px;
+    margin-left: 50%;
+
+    border: 1px solid red;
+}
+
+#switch-icon{
+    width: 25px;
+    height: 25px;
+}
+
+/*seção de preenchimento de dados*/
+#card {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    display: flex;
+    background-color: #d6daddde;
+    perspective: 1000px; /* Cria efeito 3D */
+
+    border: 1px solid green;
+
+}
+
+#login-form{
+    flex-direction: column;
+    border: 1px solid blue;
+}
+
+#login-form-content{
+    border: 1px solid red;
+    display: flex;
+    
+}
+
+/* Painel de Login e Cadastro */
+.form-panel {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding-right: 20px;
+    backface-visibility: hidden; /* Oculta o painel de trás */
+    background: white;
+    padding: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Tela de cadastro começa virada */
+#register-form {
+    transform: rotateY(180deg);
+}
+
+/* Efeito de transição */
+#card.flipped #login-form {
+    transform: rotateY(180deg);
+}
+#card.flipped #register-form {
+    transform: rotateY(0deg);
+}
+
+/* Estiliza os inputs */
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+

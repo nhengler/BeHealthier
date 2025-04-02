@@ -1,77 +1,4 @@
-/*barra de navegação*/
-
-#nav-bar{
-    display: flex;
-    position: absolute;
-    width: 100vw;
-    height: 10vh;
-    align-items: center;
-    
-}
-
-#nav-list{
-    display: flex;
-    position: relative;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    list-style: none;
-    width: 90%;
-    height: 80%;
-    padding-right: 75%;
-    
-}
-
-#nav-list li{
-    list-style-type: none;
-    display: flex;
-    position: relative;
-    margin-left: 40%;
-    padding-top: 10%;
-    flex-direction: column; 
-    align-items: center;  /* centraliza o conteúdo horizontalmente */
-    justify-content: center; /* centraliza o conteúdo verticalmente */
-    transition: background-color 0.5s ease-in-out; /* animação suave de 0.5s */
-    border-radius: 15px; /* altera o formato da div*/
-
-}
-
-#nav-list a{
-    text-decoration: none;
-    color: white;
-    font-size: 11px;
-    font-weight: bold;
-}
-
-#nav-list li:hover{
-    background-color: #d6daddde;
-}
-
-#doctor-logo{
-    display: flex;
-    position: relative; 
-    width: 10%;
-    height: 90%;
-    
-}
-
-#house-icon{
-    display: flex;
-    position: relative;
-    padding-right: 0%;
-    height: 35px;
-    width: 50px;
-    margin-bottom: 3px;
-}
-
-#calculator-icon{
-    display: flex;
-    position: relative;
-    padding-right: 0%;
-    height: 38px;
-    width: 50px;
-    margin-bottom: 3px;
-}
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 /*body da calculadora*/
 #corpo{
@@ -80,6 +7,7 @@
     height: 100vh;
     width: 100%;
     background-color: #f7fafcde;
+    font-family: 'Montserrat', sans-serif;
 }
 
 #container{
@@ -97,7 +25,6 @@
     align-items: center;
     position: absolute;
     top: 9%; /*topo*/
-    font-family: Helvetica, sans-serif;
     font-size: 25px;
 }
 
@@ -115,17 +42,18 @@
     top: 10%;
     left:0;
     height: 80vh;
+
 }
 
     #lateral p{
-        font-family: Helvetica, sans-serif;
+
         font-size: 18px;
         color: black;
         line-height: 1.5;
     }
 
     #lateral h2{
-        font-family: Helvetica, sans-serif;
+
         font-size: 35px;
         
     }
@@ -141,7 +69,6 @@
     height:40%;
     top: 50%;
     justify-content: center;
-    font-family: Helvetica, sans-serif;
     font-size: 22px;
 }
 
@@ -151,7 +78,9 @@
     align-items: center;
     position: absolute;
     top: 45%;
-    font-family: Helvetica, sans-serif;
     font-size: 18px;
     
    }
+
+
+
