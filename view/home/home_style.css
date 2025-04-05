@@ -13,20 +13,24 @@
 
 #banner{
     display: flex;
-    margin-top: 10%;
+    margin-top: 8%;
     overflow: hidden;
-
+    justify-content: center;
+    
+    border: 1px solid red;
 }
 
 #banner-container-funcionalidades{
     display: flex;
     position: relative;
     height: 300px;
-    width: 650px;
+    width: 750px;
     justify-content: center;
     background-position: center; 
     border-radius: 15px;
     margin-left: 10px;
+
+    border: 1px solid green;
 
 }
 
@@ -123,7 +127,7 @@
 #prev-btn {
     width: 50px; 
     height: 50px;
-    left: 5px; 
+    left: 0; 
     z-index: 100; /*correção de um problema de sobreposição*/
     cursor: pointer;
 }
@@ -131,7 +135,7 @@
 #next-btn {
     width: 50px; 
     height: 50px;
-    right: 5px; 
+    right: 0; 
     cursor: pointer;
 }
 
@@ -141,6 +145,50 @@
     width: 40px;
 }
 
+/*seção dos cards*/
+#cards-container{
+    display: flex;
+    margin-top: 5%;
+    overflow: hidden;
+
+    border: 1px solid blue;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;   /* organiza os elementos verticalmente */
+    align-items: center;
+    width: 300px;
+    height: 380px;
+    margin-left: 50px;
+    border-radius: 15px;
+    background-color: #f7fafcde;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2{
+    padding: 10px 0px 0px 0px;
+    font-size: 24px;
+    color: #333;
+}
+
+.card hr{
+    width: 80%;
+    border: 1px solid #ccc;
+    margin-top: 1px;
+}
+
+.card p{
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 2px;
+}
+
+.card img{
+    width: 30px;
+    height: 30px;
+    align-content: flex-end;
+}
 
 /*seção de contato*/
 #contato{
