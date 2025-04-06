@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/view/barra-de-navegacao.css">
     <link rel="stylesheet" href="../home/home_style.css"> 
     <script src="/controller/trocar_conteudo.js" defer></script>
+    <link rel="stylesheet" href="../calculadora/calculadora.css">
+    <script src="/controller/logica_calculo.js" defer></script> <!--o atributo defer faz com que o JavaScript só seja executado depois que todo o HTML for carregado-->
 </head>
 <body id="home_background">
     
@@ -78,11 +80,11 @@
             <h2>Variedade alimentar</h2>
             <hr>
             <p>
-            Inclua alimentos de todos os grupos<br>
-            Frutas, legumes, cereais, proteínas e sementes<br>
-            A diversidade garante nutrientes essenciais<br>
-            Evita deficiências e promove mais saúde<br>
-            Colorir o prato é um ótimo sinal
+            Inclua alimentos de todos os grupos:<br>
+            frutas, legumes, cereais, proteínas e sementes.<br>
+            A diversidade garante nutrientes essenciais e<br>
+            evita deficiências e promove mais saúde<br>
+            Colorir o prato é um ótimo sinal.
             
             </p>
         </div>
@@ -91,10 +93,10 @@
             <h2>Comida de verdade</h2>
             <hr>
             <p>
-            Priorize alimentos minimamente processados<br>
-            Evite os ultraprocessados no dia a dia<br>
-            Mais nutrientes e menos aditivos químicos<br>
-            Legumes, grãos, ovos, frutas e raízes<br>
+            Priorize alimentos minimamente processados e<br>
+            evite os ultraprocessados no dia a dia.<br>
+            Mais nutrientes e menos aditivos químicos.<br>
+            Opte por legumes, grãos, ovos, frutas e raízes.<br>
             
             </p>
         </div>
@@ -103,10 +105,10 @@
             <h2>Hidratação constante</h2>
             <hr>
             <p>
-            Água é essencial para todas as funções<br>
-            Beba ao longo do dia, não só com sede<br>
-            Evite bebidas açucaradas ou industrializadas<br>
-            Carregue uma garrafinha sempre com você
+            Água é essencial para todas as funções.<br>
+            Beba ao longo do dia, não só com sede.<br>
+            Evite bebidas açucaradas ou industrializadas.<br>
+            Carregue uma garrafinha sempre com você.
             
             </p>
         </div>
@@ -115,13 +117,33 @@
             <h2>Consciência ao comer</h2>
             <hr>
             <p>
-            Coma devagar e sem distrações externas<br>
-            Perceba a fome e a saciedade reais<br>
-            Evite comer por tédio ou ansiedade<br>
-            Desenvolva uma relação saudável com a comida<br>
-            Alimentação também é autocuidado diário
+            Coma devagar e sem distrações externas.<br>
+            Perceba a fome e a saciedade reais.<br>
+            Evite comer por tédio ou ansiedade.<br>
+            Desenvolva uma relação saudável com a comida.<br>
+            Alimentação também é autocuidado diário.
             
             </p>
+        </div>
+    </section>
+
+    <!--calculadora-->
+    <section id="container-calculadora">
+        <div id="calculadora">
+            <div id="display-calculadora">
+                <h2>Calculadora</h2>
+                <input type="number" id="peso" placeholder="kg" required> <!-- required impede o envio do formulário caso o campo esteja vazio -->
+                <br><br>
+                <input type="number" id="altura" placeholder="cm" required>
+                <br><br>
+                <input type="number" id="idade" placeholder="anos" required>
+                <br><br>
+                <button id="exibirResultado">Calcular</button>
+                <br><br>
+                </div> 
+                <br><br>
+            </div>
+            <div id="resultado"></div>
         </div>
     </section>
 

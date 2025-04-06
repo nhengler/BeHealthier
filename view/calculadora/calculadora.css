@@ -10,13 +10,14 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-#container{
+#container-calculadora{
     position: relative;
     display: flex;
     height: 98vh;
     width: 98vw;
-    justify-content: center;
-    align-items: center;    
+    
+    
+    border: 1px solid red;
 }
 
 #titulo{
@@ -29,58 +30,45 @@
 }
 
 #calculadora{
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    top: 25%; /*medida que posiciona em relação ao pai*/ 
+    width: 50%;
+    height: 100%;
+    position: relative;
+    margin-left: 30px;
+
+    border: 1px solid green;
 }
 
-#lateral{
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    top: 10%;
-    left:0;
-    height: 80vh;
+#display-calculadora{
+    width:50%;
+    height: 100%;
 
+    border:1px solid blue;
 }
-
-    #lateral p{
-
-        font-size: 18px;
-        color: black;
-        line-height: 1.5;
-    }
-
-    #lateral h2{
-
-        font-size: 35px;
-        
-    }
-
-    #videoYt{
-        border: 1px solid white;
-    }
 
 #resultado{
     display: flex;
     position: absolute;
-    width: 30%;
+    width: 20%;
     height:40%;
-    top: 50%;
+    margin-left: 32%;
+    margin-top: 15px;
     justify-content: center;
-    font-size: 22px;
+    font-size: 18px;
+    line-height: 30px;
+    border: 1px solid red;
 }
 
-   #exibirCardapio{
+
+#exibirCardapio{
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 45%;
+    margin-top: 170px;
     font-size: 18px;
-    
-   }
+    height: 25px;
+    width: 200px;
+}
 
 
 

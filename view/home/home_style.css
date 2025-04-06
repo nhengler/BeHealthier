@@ -126,7 +126,7 @@
     height: 50px;
     left: 0; 
     z-index: 100; /*correção de um problema de sobreposição*/
-    cursor: pointer;
+    cursor: pointer
 }
 
 #next-btn {
