@@ -1,28 +1,35 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
-/* Centraliza o container na tela */
-#container {
-    width: 300px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+body{
+    height: 100vh;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h2{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+#container {
+    width: 300px;
+    height: 600px;
+    position: relative;
     font-family: 'Montserrat', sans-serif;
+    
+    
 }
 
 /*div do botão de troca*/
-#switch-button {
+#switch-button{
     display: flex;
-    cursor: pointer;
-    position: relative;
-    background-color: white;
-    margin-bottom: 10px;
-    margin-left: 45%;
-
-    border: 1px solid red;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
 }
 
 #switch-icon{
@@ -30,50 +37,9 @@
     height: 25px;
 }
 
-/*seção de preenchimento de dados*/
-#card-login {
-    width: 100%;
-    height: 300px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    border-top: 50%;
-    perspective: 1000px; /* Cria efeito 3D */
 
-    border: 1px solid green;
 
-}
-
-#card-register{
-    width: 100%;
-    height: 450px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    
-    perspective: 1000px; /* Cria efeito 3D */
-
-    border: 1px solid green;
-}
-
-.form-content{
-    border: 1px solid red;
-    
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 80%;
-    justify-content: center;
-    margin-top: 60px;
-    align-items: center;
-    background: white;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    
-}
-
-/* Painel de Login e Cadastro */
+/* transição entre as telas de login e registro */
 .conteudo-atual-flip{
     opacity: 1;
     visibility: visible;
@@ -86,14 +52,39 @@
     visibility: hidden;
 }
 
-.form-content input{
+/* formulário */
+.form-content {
+    height: 500px;
+    width: 300px;
+    position: absolute;
     display: flex;
     flex-direction: column;
-    margin: 30px;
-    padding: 10px;
-    
+    align-items: center;
+    margin-top: 10px;
+
 }
 
+.form-content input{
+    width: 80%;
+    height: 40px;
+    margin: 10px 15px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 17px;
+}
+
+.form-content button{
+    width: 40%;
+    height: 40px;
+    margin: 10px 90px;
+    border-radius: 5px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+}
 
 /*
 #register-form {
