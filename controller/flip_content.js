@@ -12,6 +12,7 @@ function flipCard(){
         // mostra o próximo conteúdo
         RegisterContent.classList.remove("conteudo-oculto-flip");
         RegisterContent.classList.add("conteudo-atual-flip");
+    
     } else {
         // volta para o conteúdo inicial
         RegisterContent.classList.remove("conteudo-atual-flip");
