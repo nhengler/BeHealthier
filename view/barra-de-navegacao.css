@@ -68,3 +68,91 @@
 #login-btn:hover{
     background-color: #d6daddde;
 }
+
+/* Media Queries para Responsividade */
+
+/* Tablet - 768px a 1024px */
+@media screen and (max-width: 1024px) {
+    #nav-bar {
+        height: 12vh;
+        padding: 0 2rem;
+    }
+    
+    #doctor-logo {
+        width: 12%;
+    }
+    
+    #login-btn {
+        margin-left: 70%;
+        width: 140px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile - até 768px */
+@media screen and (max-width: 768px) {
+    #nav-bar {
+        flex-direction: column;
+        height: auto;
+        min-height: 15vh;
+        padding: 1rem;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    #doctor-logo {
+        width: 15%;
+        max-width: 60px;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+    
+    #titulo_site {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+    
+    #nav-list {
+        width: 100%;
+        padding: 0;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    #login-btn {
+        position: relative;
+        margin: 0;
+        width: 150px;
+        height: 40px;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Mobile pequeno - até 480px */
+@media screen and (max-width: 480px) {
+    #nav-bar {
+        padding: 0.5rem;
+        min-height: 12vh;
+    }
+    
+    #doctor-logo {
+        width: 20%;
+        max-width: 50px;
+    }
+    
+    #titulo_site {
+        font-size: 1.3rem;
+    }
+    
+    #login-btn {
+        width: 130px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+}

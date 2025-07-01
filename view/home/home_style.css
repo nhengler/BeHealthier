@@ -293,7 +293,7 @@
 
 /* Media Queries para Responsividade */
 
-/* Tablet - 768px a 1024px */
+/* Tablet - 768px a 1024px 
 @media screen and (max-width: 1024px) {
     #home_background {
         padding-top: 12vh;
@@ -364,25 +364,21 @@
     #display-calculadora {
         width: 60%;
     }
-}
+}*/
 
 /* Mobile - até 768px */
 @media screen and (max-width: 768px) {
-    #home_background {
-        padding-top: 15vh;
-    }
-    
     #banner {
-        margin-top: 2%;
-        padding: 0 1rem;
+        flex-direction: row;
     }
     
     #banner-container-funcionalidades {
-        flex-direction: column;
+        flex-direction: row;
         width: 95%;
         height: auto;
         min-height: 400px;
         padding: 1rem;
+        margin-top: 3rem;
     }
     
     #conteudo-da-calculadora,
@@ -407,7 +403,7 @@
     #banner-text-balanca,
     #banner-text-macros {
         padding: 0;
-        margin-top: 1rem;
+        
     }
     
     #banner-text-balanca h2,
@@ -422,10 +418,16 @@
         line-height: 1.4;
     }
     
+    #banner-text-balanca hr,
+    #banner-text-macros hr{
+        padding: 0;
+        
+    }
+
     #prev-btn,
     #next-btn {
         position: relative;
-        margin: 1rem 0;
+        margin: 5rem;
         width: 60px;
         height: 60px;
     }
@@ -610,9 +612,6 @@
 
 /* Mobile pequeno - até 480px */
 @media screen and (max-width: 480px) {
-    #home_background {
-        padding-top: 12vh;
-    }
     
     #banner {
         padding: 0 0.5rem;
