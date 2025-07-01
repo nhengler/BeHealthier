@@ -290,3 +290,385 @@
 #contato{
     margin-top: 200px;
 }
+
+/* Media Queries para Responsividade */
+
+/* Tablet - 768px a 1024px */
+@media screen and (max-width: 1024px) {
+    #home_background {
+        padding-top: 12vh;
+    }
+    
+    #banner {
+        margin-top: 5%;
+        padding: 0 2rem;
+    }
+    
+    #banner-container-funcionalidades {
+        width: 90%;
+        max-width: 600px;
+        height: 280px;
+    }
+    
+    #conteudo-da-calculadora,
+    #conteudo-do-cardapio {
+        width: 90%;
+        max-width: 550px;
+        height: 280px;
+    }
+    
+    #banner-img-balanca {
+        width: 220px;
+        height: 220px;
+        margin-top: 30px;
+    }
+    
+    #banner-img-macros {
+        width: 250px;
+        height: 250px;
+        margin-top: 15px;
+    }
+    
+    #banner-text-balanca,
+    #banner-text-macros {
+        padding-left: 20px;
+    }
+    
+    #banner-text-balanca h2,
+    #banner-text-macros h2 {
+        font-size: 1.8rem;
+    }
+    
+    #cards-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 2rem;
+    }
+    
+    .card {
+        width: 280px;
+        margin: 15px;
+    }
+    
+    #container-calculadora {
+        height: 70vh;
+        padding: 0 2rem;
+        margin-top: 20px;
+    }
+    
+    #calculadora {
+        width: 60%;
+        margin-left: 20px;
+    }
+    
+    #display-calculadora {
+        width: 60%;
+    }
+}
+
+/* Mobile - até 768px */
+@media screen and (max-width: 768px) {
+    #home_background {
+        padding-top: 15vh;
+    }
+    
+    #banner {
+        margin-top: 2%;
+        padding: 0 1rem;
+    }
+    
+    #banner-container-funcionalidades {
+        flex-direction: column;
+        width: 95%;
+        height: auto;
+        min-height: 400px;
+        padding: 1rem;
+    }
+    
+    #conteudo-da-calculadora,
+    #conteudo-do-cardapio {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        min-height: 350px;
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    #banner-img-balanca,
+    #banner-img-macros {
+        width: 180px;
+        height: 180px;
+        margin: 1rem auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #banner-text-balanca,
+    #banner-text-macros {
+        padding: 0;
+        margin-top: 1rem;
+    }
+    
+    #banner-text-balanca h2,
+    #banner-text-macros h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+    
+    #banner-text-balanca p,
+    #banner-text-macros p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    
+    #prev-btn,
+    #next-btn {
+        position: relative;
+        margin: 1rem 0;
+        width: 60px;
+        height: 60px;
+    }
+    
+    #prev-btn {
+        order: -1;
+    }
+    
+    #next-btn {
+        order: 1;
+    }
+    
+    /* Cards usando CSS Grid */
+    #cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 350px;
+        margin: 0 auto;
+        height: auto;
+        min-height: 300px;
+        padding: 1.5rem;
+    }
+    
+    .card h2 {
+        font-size: 1.4rem;
+        padding: 0.5rem 0;
+    }
+    
+    .card p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    /* Calculadora */
+    #container-calculadora {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 1rem;
+        margin-top: 2rem;
+    }
+    
+    #calculadora {
+        width: 100%;
+        margin: 0;
+        padding: 1.5rem;
+    }
+    
+    #display-calculadora {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    #display-calculadora h2 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    #display-calculadora input {
+        width: 100%;
+        max-width: 300px;
+        padding: 0.8rem;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+    
+    #exibirResultado {
+        width: 100%;
+        max-width: 200px;
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+        margin: 1rem 0;
+        border: none;
+        border-radius: 8px;
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    #exibirResultado:hover {
+        background-color: #0056b3;
+    }
+    
+    #resultado {
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 1rem 0;
+        padding: 1rem;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    /* Formulário de contato */
+    #contato {
+        margin-top: 3rem;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    
+    #contato h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    
+    #contato form {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    #contato label {
+        display: block;
+        margin: 1rem 0 0.5rem;
+        font-weight: bold;
+        text-align: left;
+    }
+    
+    #contato input,
+    #contato textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-family: inherit;
+    }
+    
+    #contato button {
+        width: 100%;
+        padding: 1rem;
+        margin-top: 1rem;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    #contato button:hover {
+        background-color: #0056b3;
+    }
+    
+    /* Rodapé */
+    footer {
+        margin-top: 3rem;
+        padding: 2rem 1rem;
+        text-align: center;
+        background-color: #f8f9fa;
+        border-top: 1px solid #e9ecef;
+    }
+    
+    footer p {
+        margin: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+    
+    footer a {
+        color: #007bff;
+        text-decoration: none;
+        margin: 0 0.5rem;
+    }
+    
+    footer a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Mobile pequeno - até 480px */
+@media screen and (max-width: 480px) {
+    #home_background {
+        padding-top: 12vh;
+    }
+    
+    #banner {
+        padding: 0 0.5rem;
+    }
+    
+    #banner-container-funcionalidades {
+        padding: 0.5rem;
+        min-height: 350px;
+    }
+    
+    #banner-img-balanca,
+    #banner-img-macros {
+        width: 150px;
+        height: 150px;
+    }
+    
+    #banner-text-balanca h2,
+    #banner-text-macros h2 {
+        font-size: 1.3rem;
+    }
+    
+    #banner-text-balanca p,
+    #banner-text-macros p {
+        font-size: 0.9rem;
+    }
+    
+    .card {
+        padding: 1rem;
+        min-height: 280px;
+    }
+    
+    .card h2 {
+        font-size: 1.2rem;
+    }
+    
+    .card p {
+        font-size: 0.9rem;
+    }
+    
+    #container-calculadora {
+        padding: 0.5rem;
+    }
+    
+    #calculadora {
+        padding: 1rem;
+    }
+    
+    #contato {
+        padding: 1.5rem 0.5rem;
+    }
+    
+    #contato h2 {
+        font-size: 1.5rem;
+    }
+    
+    footer {
+        padding: 1.5rem 0.5rem;
+    }
+}
