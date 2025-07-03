@@ -232,7 +232,6 @@
 #container-calculadora{
     position: relative;
     display: flex;
-    height: 80vh;
     width: 98vw;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -259,11 +258,7 @@
 
 #resultado{
     display: flex;
-    position: absolute;
-    width: 20%;
-    height:40%;
-    margin-top: 320px;
-    margin-left: 75px;
+    margin: 0 auto;
     justify-content: center;
     font-size: 18px;
     line-height: 30px;
@@ -443,7 +438,7 @@
         grid-template-columns: 1fr;
         gap: 1.5rem;
         padding: 0 1rem;
-        
+        margin-top: 1rem;
     }
     
     .card {
@@ -469,16 +464,19 @@
     #container-calculadora {
         flex-direction: column;
         margin-top: 2rem;
+        height: auto;
     }
     
     #calculadora {
         margin: 0 auto;
         width: 80%;
-        height: auto;
+        padding: 0;
+        position: relative;
     }
     
     #display-calculadora {
         margin: 0 auto;
+        padding: 0;
     }
     
     #display-calculadora h2 {
@@ -489,6 +487,7 @@
     #display-calculadora input {
         width: 100%;
         max-width: 300px;
+        margin: 1rem;
         padding: 0.8rem;
         font-size: 1rem;
         border: 1px solid #ccc;
@@ -498,7 +497,7 @@
     #exibirResultado {
         width: 100%;
         max-width: 200px;
-        padding: 0.8rem 1.5rem;
+        padding: 1rem;
         font-size: 1rem;
         margin: 1rem 0;
         border: none;
@@ -514,15 +513,14 @@
     }
     
     #resultado {
-        position: relative;
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-        padding: 1rem;
-        text-align: center;
-        background-color: rgba(255, 255, 255, 0.9);
-        border-radius: 8px;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        line-height: 1.4;
+        max-height: 0; 
+        opacity: 0;
+        transition: max-height 0.6s ease-in-out, opacity 0.7s ease;
+        
     }
     
     /* Formulário de contato */
