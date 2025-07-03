@@ -75,7 +75,7 @@
 @media screen and (max-width: 1024px) {
     #nav-bar {
         height: 12vh;
-        padding: 0 2rem;
+        
     }
     
     #doctor-logo {
@@ -96,7 +96,7 @@
         flex-direction: column;
         height: auto;
         min-height: 15vh;
-        padding: 1rem;
+        
         position: relative;
         justify-content: center;
         align-items: center;
@@ -137,7 +137,7 @@
 /* Mobile pequeno - até 480px */
 @media screen and (max-width: 480px) {
     #nav-bar {
-        padding: 0.5rem;
+        
         min-height: 12vh;
     }
     

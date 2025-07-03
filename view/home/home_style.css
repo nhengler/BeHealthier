@@ -236,7 +236,7 @@
     width: 98vw;
     margin-top: 30px;
     margin-bottom: 10px;
-  
+    border-radius: 20px;
 }
 
 #calculadora{
@@ -244,9 +244,6 @@
     height: 100%;
     position: relative;
     margin-left: 30px;
-    border-radius: 20px;
-    background-color: rgba(228, 224, 222, 0.932);
-    
 }
 
 #display-calculadora {
@@ -257,7 +254,6 @@
     align-items: center; 
     padding: 10px; 
     border-radius: 5px;
-
 }
 
 
@@ -378,7 +374,7 @@
         height: auto;
         min-height: 400px;
         padding: 1rem;
-        margin-top: 3rem;
+        
     }
     
     #conteudo-da-calculadora,
@@ -428,6 +424,7 @@
     #next-btn {
         position: relative;
         margin: 5rem;
+        margin-top: 7rem;
         width: 60px;
         height: 60px;
     }
@@ -445,12 +442,12 @@
         display: grid;
         grid-template-columns: 1fr;
         gap: 1.5rem;
-        padding: 1rem;
-        margin-top: 2rem;
+        padding: 0 1rem;
+        
     }
     
     .card {
-        width: 100%;
+        width: 80%;
         max-width: 350px;
         margin: 0 auto;
         height: auto;
@@ -471,22 +468,17 @@
     /* Calculadora */
     #container-calculadora {
         flex-direction: column;
-        height: auto;
-        width: 100%;
-        padding: 1rem;
         margin-top: 2rem;
     }
     
     #calculadora {
-        width: 100%;
-        margin: 0;
-        padding: 1.5rem;
+        margin: 0 auto;
+        width: 80%;
+        height: auto;
     }
     
     #display-calculadora {
-        width: 100%;
-        height: auto;
-        padding: 1rem;
+        margin: 0 auto;
     }
     
     #display-calculadora h2 {
@@ -499,7 +491,6 @@
         max-width: 300px;
         padding: 0.8rem;
         font-size: 1rem;
-        margin: 0.5rem 0;
         border: 1px solid #ccc;
         border-radius: 8px;
     }
@@ -524,9 +515,9 @@
     
     #resultado {
         position: relative;
-        width: 100%;
+        width: 80%;
         height: auto;
-        margin: 1rem 0;
+        margin: 0 auto;
         padding: 1rem;
         text-align: center;
         background-color: rgba(255, 255, 255, 0.9);
@@ -560,7 +551,7 @@
     
     #contato input,
     #contato textarea {
-        width: 100%;
+        width: 80%;
         padding: 0.8rem;
         border: 1px solid #ccc;
         border-radius: 8px;
