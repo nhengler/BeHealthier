@@ -12,77 +12,59 @@
 
 /*seção do banner*/
 
-#banner{
+#banner {
     display: flex;
-    margin-top: 8%;
-    overflow: hidden;
+    width: 100%;
+    background-color: white;
     justify-content: center;
-}
+    margin-top: 8vh;
+    overflow: hidden;
+  }
 
-#banner-container-funcionalidades{
+  #banner-container-funcionalidades {
     display: flex;
     position: relative;
-    height: 300px;
-    width: 750px;
+    height: 18.75rem; /* 300px */
+    width: 46.875rem; /* 750px */
     justify-content: center;
-    background-position: center; 
-    border-radius: 15px;
-    margin-left: 10px;
+    background-position: center;
+    border-radius: 1rem;
     background-color: white;
-}
+  }
 
-#conteudo-da-calculadora{
+  #conteudo-da-calculadora,
+  #conteudo-do-cardapio {
     display: flex;
     position: absolute;
-    height: 300px;
-    width: 650px;
+    height: 18.75rem; /* 300px */
+    width: 40.625rem; /* 650px */
     justify-content: center;
-    background-position: center; 
-    border-radius: 15px;
-    margin-left: 10px;
-}
+    background-position: center;
+    border-radius: 1rem;
+  }
 
 #banner-img-balanca{
-    width: 270px;
-    height: 270px;
-    margin-top: 15px;
-    margin-left: 10px;
+    width: 16.875rem; /* 270px */ /* 310px */
+    height: 16.875rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
     border-radius: 50%;
-    margin-left: 15px;
-
+    object-fit: cover;
 }
 
-#banner-text-balanca{
-    padding-left: 30px;
-    color: rgb(0, 0, 0);
- 
-}
-
-#banner-text-macros{
-    padding-left: 30px;
-    color: rgb(0, 0, 0);
- 
-}
-
-#conteudo-do-cardapio{
-    display: flex;
-    position: absolute;
-    height: 300px;
-    width: 650px;
-    justify-content: center;
-    background-position: center; 
-    border-radius: 15px;
-    margin-left: 10px;
- 
+#banner-text-balanca,
+#banner-text-macros {
+  padding-left: 2rem;
+  color: black;
 }
 
 #banner-img-macros{
-    width: 310px;
-    height: 310px;
+    width: 19.375rem;
+    height: 16.875rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
     border-radius: 50%;
-    margin-left: 15px;
     object-fit: cover;
-    
 }
 
 .conteudo-atual{
@@ -97,18 +79,20 @@
     visibility: hidden;
 }
 
-#prev-btn, #next-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute; /*os botões ficam posicionados em relação ao banner (o primeiro "relative" antes desse "abolute"*/
-    top: 50%; 
-    transform: translateY(-50%); 
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    
+#prev-btn,
+#next-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 50%;
+  cursor: pointer;
 }
+
 
 #prev-btn {
     width: 50px; 
@@ -126,9 +110,10 @@
 }
 
 
-#arrow-left, #arrow-right{
-    height: 40px;
-    width: 40px;
+#arrow-left,
+#arrow-right {
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 /*seção dos cards
