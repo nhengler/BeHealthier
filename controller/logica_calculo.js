@@ -14,7 +14,7 @@ function fazerCalculo(){
     campoResultado.style.maxHeight = "500px"; 
     campoResultado.style.opacity = "1"; 
     campoResultado.style.paddingBottom = "3rem"; 
-    document.getElementById('resultado').innerHTML = "Resultado: " + valorResultado.toFixed(2) + "<br>";
+    document.getElementById('resultado').innerHTML = "<h2>Resultado:<h2>" + valorResultado.toFixed(2) + "<br>";
     document.getElementById('resultado').innerHTML += "Com base nos seus resultados, fizemos um cardápio especial para você. Clique no botão abaixo para visualizar.";
     
     let botaoSugestao = document.createElement('button'); // cria o botão de sugestão no HTML

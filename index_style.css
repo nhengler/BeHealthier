@@ -8,6 +8,7 @@
     height: 100%;
     background-color: hsl(0, 0%, 100%);
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 /*seção do banner*/
@@ -205,9 +206,9 @@
 #container-calculadora {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 98vw;
+    width: 100%;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
     border-radius: 1.25rem;
   }
@@ -222,7 +223,7 @@
 
 #calculadora h2{
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: rgb(3, 3, 3);
     margin-top: 10px;
 }
@@ -232,7 +233,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
     padding: 1rem;
     border-radius: 0.5rem;
   }
@@ -241,19 +242,26 @@
     border-radius: 0.5rem;
     padding: 0.5rem;
     width: 100%;
-    max-width: 200px;
+    max-width: 200px;       
   }
   
 
   #resultado {
     display: flex;
     flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-top: 6rem;
     font-size: 1.25rem; /* 18px */
     line-height: 2rem;
     color: rgb(0, 0, 0);
     font-weight: bold;
+  }
+
+  #resultado h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    padding: 0;
+    line-height: 0.5;
   }
 
 #exibirResultado {
@@ -271,6 +279,8 @@
 }
 
 #exibirCardapio{
+    width: 30%;
+    
     padding: 1rem;
     font-size: 1rem;
     margin: 1rem 0;
@@ -414,6 +424,10 @@
 
 /* Mobile - até 768px */
 @media screen and (max-width: 768px) {
+    #home_background {
+        overflow-x: hidden;
+    }
+    
     #login-btn{
         border-radius: 1rem;
         text-decoration: none;
@@ -524,6 +538,7 @@
     
     /* Calculadora */
     #container-calculadora {
+        display: flex;
         flex-direction: column;
         margin-top: 2rem;
         height: auto;
@@ -547,7 +562,7 @@
     }
     
     #display-calculadora input {
-        width: 100%;
+        width: 50%;
         max-width: 300px;
         margin: 1rem;
         padding: 0.8rem;
@@ -572,9 +587,10 @@
     }
     
     #exibirCardapio{
+        width: 80%;
         border-radius: 8px;
         background-color: #536b38;
-        padding: 1rem;
+        padding: 0.4rem;
         font-size: 1rem;
         color: white;
     }
@@ -584,13 +600,20 @@
         align-items: center;
         text-align: center;
         font-size: 1rem;
-        line-height: 1.9rem;
+        line-height: 1.8rem;
         max-height: 0; 
         opacity: 0;
         transition: max-height 0.6s ease-in-out, opacity 0.7s ease;
-        
+        margin-top: 2rem;
     }
     
+    #resultado h2{
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        padding: 0;
+        line-height: 0.5;
+    }
+
     /* Formulário de contato */
     #contato {
         margin-top: 3rem;

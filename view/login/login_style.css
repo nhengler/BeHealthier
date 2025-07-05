@@ -19,7 +19,7 @@ h2{
     height: 600px;
     position: relative;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f0ebeb;
+    
     border-radius: 20px;
     
 }
@@ -63,8 +63,10 @@ h2{
     flex-direction: column;
     align-items: center;
     margin-top: 10px;
-    border-radius: 20px;
-    background-color: rgba(228, 224, 222, 0.932);
+    background-color: #98c466;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
 
 }
 
@@ -84,7 +86,7 @@ h2{
     margin: 10px 90px;
     border-radius: 5px;
     border: none;
-    background-color: #007BFF;
+    background-color: #536b38;
     color: white;
     font-size: 17px;
     cursor: pointer;
