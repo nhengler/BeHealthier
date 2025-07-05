@@ -6,7 +6,7 @@
     flex-direction: column;   /* organiza os elementos verticalmente */
     width: 100%;
     height: 100%;
-    background-color: #98c466;
+    background-color: hsl(0, 0%, 100%);
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -223,7 +223,7 @@
 #calculadora h2{
     text-align: center;
     font-size: 24px;
-    color: white;
+    color: rgb(3, 3, 3);
     margin-top: 10px;
 }
 
@@ -249,11 +249,10 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    margin-top: 6rem;
     font-size: 1.25rem; /* 18px */
     line-height: 2rem;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
   }
 
@@ -555,6 +554,7 @@
         font-size: 1rem;
         border: 1px solid #ccc;
         border-radius: 8px;
+        box-shadow: #536b38 0px 0px 10px 0px;
     }
     
     #exibirResultado {
@@ -584,7 +584,7 @@
         align-items: center;
         text-align: center;
         font-size: 1rem;
-        line-height: 1.4;
+        line-height: 1.9rem;
         max-height: 0; 
         opacity: 0;
         transition: max-height 0.6s ease-in-out, opacity 0.7s ease;
