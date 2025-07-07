@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libertinus+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Libertinus+Mono&display=swap');
+/* reset e base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.corpo_cardapio{
+  color: #050505; 
+  font-family: "Lora", serif;
+  padding: 2rem 1rem; 
+  display: flex;
+  justify-content: center;
+}
+
+.container_cardapio {
+  width: 100%;
+  max-width: 40rem; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.container_cardapio h1 {
+  font-family: "Libertinus Mono", monospace;
+  font-size: 2.5rem; 
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.container_cardapio ul h1 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+
+.container_cardapio ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.15); 
+  border-radius: 0.5rem;
+  padding: 1.2rem;
+  width: 100%;
+  list-style: none;
+  gap: 0.4rem;
+}
+
+
+.container_cardapio li {
+  font-size: 1.1rem;
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+hr {
+  width: 80%;
+  border: none;
+  border-top: 2px solid #0c0c0c;
+}
+
+
+@media (min-width: 768px) {
+  body#corpo_cardapio1 {
+    padding: 3rem 2rem;
+  }
+
+  .container_cardapio > h1 {
+    font-size: 3rem;
+  }
+
+  .container_cardapio ul > h1 {
+    font-size: 1.8rem;
+  }
+
+  .container_cardapio li {
+    font-size: 1.2rem;
+  }
+}
+
+  
+
