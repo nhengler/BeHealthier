@@ -7,39 +7,23 @@ body{
     align-items: center;
 }
 
-h2{
-    font-size: 30px;
-    text-align: center;
-    margin-top: 20px;
-    
-}
-
 #container {
     width: 300px;
     height: 600px;
-    position: relative;
     font-family: 'Montserrat', sans-serif;
-    
-    border-radius: 20px;
-    
+    margin: 0 auto;
 }
 
 /*div do botão de troca*/
 #switch-button{
     display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto;
-    margin-top: 20px;
-    
 }
 
 #switch-icon{
     width: 25px;
     height: 25px;
 }
-
-
 
 /* transição entre as telas de login e registro */
 .conteudo-atual-flip{
@@ -54,57 +38,144 @@ h2{
     visibility: hidden;
 }
 
-/* formulário */
-.form-content {
-    height: 500px;
-    width: 300px;
-    position: absolute;
+
+/* register */ 
+  .form {
     display: flex;
     flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    padding: 1rem 0;
+    margin: 0 auto;
+    box-sizing: border-box; 
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #536b38;
+    font-weight: 600;
+    letter-spacing: -1px;
+    position: relative;
+    display: flex;
     align-items: center;
-    margin-top: 10px;
-    background-color: #98c466;
-    border-radius: 1rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    opacity: 0.9;
-
-}
-
-.form-content input{
-    width: 80%;
-    height: 40px;
-    margin: 10px 15px;
-    padding: 0 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 17px;
-}
-
-.form-content button{
-    width: 40%;
-    height: 40px;
-    margin: 10px 90px;
-    border-radius: 5px;
-    border: none;
+    padding-left: 2rem;
+  }
+  
+  .title::before,.title::after {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    left: 0px;
     background-color: #536b38;
-    color: white;
-    font-size: 17px;
+  }
+  
+  .title::before {
+    width: 18px;
+    height: 18px;
+    background-color: #536b38;
+  }
+  
+  .title::after {
+    width: 18px;
+    height: 18px;
+    animation: pulse 1s linear infinite;
+  }
+
+  
+  .flex {
+    display: flex;
+    width: 100%;
+    gap: 6px;
+  }
+  
+  .form label {
+    position: relative;
+  }
+  
+  .form label .input {
+    width: 100%;
+    padding: 1rem 0;
+    margin: 0 auto;
+    outline: 0;
+    border: 1px solid rgba(105, 105, 105, 0.397);
+    
+  }
+  
+  span {
+    left: 10px;
+    top: 15px;
+    color: grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+  }
+  
+  .form label .input:placeholder-shown + span {
+    top: 15px;
+    font-size: 0.9em;
+  }
+  
+  .form label .input:focus + span,.form label .input:valid + span {
+    top: 0px;
+    font-size: 0.7em;
+    font-weight: 600;
+  }
+  
+  .form label .input:valid + span {
+    color: green;
+  }
+  
+  .submit {
+    border: none;
+    outline: none;
+    background-color: #536b38;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    transform: .3s ease;
+    margin-top: 1rem;
+  }
+  
+  .submit:hover {
     cursor: pointer;
+  }
+
+  #card-register {
+    transform: translateX(-5rem);
+}
+  
+  @keyframes pulse {
+    from {
+      transform: scale(0.9);
+      opacity: 1;
+    }
+  
+    to {
+      transform: scale(1.8);
+      opacity: 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    #card-login .input,
+    #card-register .input {
+        width: 95%; 
+        box-sizing: border-box; 
+    }
+
+    #card-login,
+    #card-register {
+        width: 95%; 
+        transform: translateX(-2rem);
+    }
+
+    .submit{
+        width: 95%;
+    }
 }
 
-/*
-#register-form {
-    transform: rotateY(180deg);
-}
-
-
-#card.flipped #login-form {
-    transform: rotateY(180deg);
-}
-#card.flipped #register-form {
-    transform: rotateY(0deg);
-}
-*/
 
 
 
