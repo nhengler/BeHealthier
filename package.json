@@ -1,0 +1,24 @@
+{
+  "name": "behealthier",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/nhengler/calc-metabolismo#readme",
+  "bugs": {
+    "url": "https://github.com/nhengler/calc-metabolismo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhengler/calc-metabolismo.git"
+  },
+  "license": "ISC",
+  "author": "Nicolas Santos Hengler",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "consign": "^0.1.6",
+    "express": "^5.1.0"
+  }
+}
