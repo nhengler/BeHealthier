@@ -12,52 +12,52 @@
             <img src="assets/switch.svg" alt="Botão de alternar" id="switch-icon">
         </button>
             
-        <!-- Tela de Login -->
-        <form class="form conteudo-atual-flip" id="card-login">
+        <!-- Tela de Login (mudar a rota do action futuramente) -->
+        <form class="form conteudo-atual-flip" id="card-login" method="POST" action="http://localhost:3000/api/users/login">
             <p class="title">Login</p>    
             <label>
-                <input class="input" type="email" placeholder="" required="">
+                <input class="input" type="email" name="email" required>
                 <span>Email</span>
             </label> 
                 
             <label>
-                <input class="input" type="password" placeholder="" required="">
+                <input class="input" type="password" name="password" required>
                 <span>Password</span>
             </label>
-            <button class="submit">Submit</button>
+            <button type="submit" class="submit">Submit</button>
         </form>
 
         
-        <!-- Tela de Cadastro -->
-        <form class="form conteudo-oculto-flip" id="card-register">
+        <!-- Tela de Cadastro (mudar a rota do action futuramente) --> 
+        <form class="form conteudo-oculto-flip" id="card-register" method="POST" action="http://localhost:3000/api/users/register">
             <p class="title">Register</p>
             
             <div class="flex">
                 <label>
-                    <input class="input" type="text" placeholder="" required="">
+                    <input class="input" type="text" name="firstname" required>
                     <span>Firstname</span>
                 </label>
 
                 <label>
-                    <input class="input" type="text" placeholder="" required="">
+                    <input class="input" type="text" name="lastname" required>
                     <span>Lastname</span>
                 </label>
             </div>  
                     
             <label>
-                <input class="input" type="email" placeholder="" required="">
+                <input class="input" type="email" name="email" required>
                 <span>Email</span>
             </label> 
                 
             <label>
-                <input class="input" type="password" placeholder="" required="">
+                <input class="input" type="password" name="password" required>
                 <span>Password</span>
             </label>
             <label>
-                <input class="input" type="password" placeholder="" required="">
+                <input class="input" type="password" name="confirmPassword" required>
                 <span>Confirm password</span>
             </label>
-            <button class="submit">Submit</button>
+            <button type="submit" class="submit">Submit</button>
         </form>
     </div>
     <script src="controller/flip_content.js"></script>
