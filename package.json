@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "consign": "^0.1.6",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "mysql2": "^3.14.3"
   }
 }
