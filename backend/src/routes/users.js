@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const router = express.Router();
 
 // rota de cadastro
@@ -29,4 +29,4 @@ router.post("/login", (req, res) => {
     res.status(200).json({ message: "Login realizado com sucesso!" });
 });
 
-module.exports = router;
+module.exports = router;*/

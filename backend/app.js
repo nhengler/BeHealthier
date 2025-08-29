@@ -7,10 +7,8 @@ const app = express(); // atribui o Express à variável app para podermos usar 
 app.use(express.json());
 
 consign()
-  .include('/routes')       
-  .then('/controllers')     
-  .then('/models')          
-  .then('/db')              
+  .include('/src/routes') 
+  .then('/src/db')                      
   .into(app);                 
 
 module.exports = app; 
