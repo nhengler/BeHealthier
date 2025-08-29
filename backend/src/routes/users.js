@@ -1,5 +1,3 @@
-const express = require("express");
-
 module.exports = (app) => {
     // rota de cadastro
     app.post("/register", (req, res) => {
