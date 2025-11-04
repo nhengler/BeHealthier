@@ -25,11 +25,28 @@ function fazerCalculo(){
     
     botaoSugestao.addEventListener('click', function(){
         if(valorResultado <= 2000){
-            window.open("view/cardapios/cardapio1.html"); // abre cardapio1.html em outra guia
+            window.open("view/cardapios/cardapio1.html"); 
         
-        }   else if (valorResultado > 2000 && valorResultado <= 2500){
-            window.open("view/cardapios/cardapio2.html"); // abre cardapio2.html em outra guia
+        }   else if (valorResultado > 2000 && valorResultado <= 2100){
+            window.open("view/cardapios/cardapio2.html"); 
         }
+        
+            else if (valorResultado > 2000 && valorResultado <= 2200){
+            window.open("view/cardapios/cardapio3.html"); 
+        }
+
+            else if (valorResultado > 2000 && valorResultado <= 2300){
+            window.open("view/cardapios/cardapio4.html"); 
+        }
+
+            else if (valorResultado > 2000 && valorResultado <= 2400){
+            window.open("view/cardapios/cardapio5.html"); 
+        }
+
+            else if (valorResultado > 2000 && valorResultado <= 2500){
+            window.open("view/cardapios/cardapio6.html"); 
+        }
+            
         });
     }    
     
